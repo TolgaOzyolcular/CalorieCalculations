@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+<h1>Calorie Calculator</h1>
+
+<div ng-app="">
+
+    <p>How much do you weigh? (kg) <input type="text" id="weight"></p>
+
+    <p>What is your height? (cm) <input type="text" id="height"></p>
+
+    <p>What is your age? <input type="text" id="age" ></p>
+
+    <p>What is your sex? <input type="text" id="sex"></p>
+
+    <p><b>Activity Levels:</b> <br>
+        Cerbal Palsy Patient - 0 <br>
+        Sedentary (Basic Daily Tasks) - 1 <br>
+        Light Activity (Light Daily Walking / ~10k steps) - 2 <br>
+        Moderate Activity (1 Hour Exercise Daily) - 3 <br>
+        Vigerous Activity (2 Hours Exercise Daily) - 4 <br>
+        Olympic Level Cyclist (4-5 Hours Exercise Daily) - 5<br>
+        <br>
+        Please note that excercise is generally cardio based (swim/run, etc) <br>
+        If you're strength training or lifting weights leasurly, you should pick #2.<br>
+        <br>
+        If you're strength training and running for 30 minutes, calculate both #2 & #3 <br>
+        and get the average.</p>
+
+    <p>What is your activity level? <input type="text" id="activityLevel"></p>
+
+    <button type="button" onclick="getCalories()">Submit</button>
+
+    <p>Calories required to maintain current weight:</p>
+
+    <p id="maintenance">Calories will be displayed here!</p>
+
+    <p>Comfortable weight loss calories:</p>
+
+    <p id="comfortable">Calories will be displayed here!</p>
+
+    <p>Fast weight loss calories:</p>
+
+    <p id="fast">Calories will be displayed here!</p>
+
+    <p>Fast weight loss calories:</p>
+
+    <p id="extreme">Calories will be displayed here!</p>
+
+    <script src="MainScript.js"></script>
+
+</div>
+</body>
+</html>
